@@ -1,16 +1,17 @@
 body {
     font-family: "Tahoma", "Geneva", "sans-serif";
     font-size: 24px;
+    background-color: #d1d1d1;
 }
 
 a:link {
     text-decoration: none;
-    color: none;
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
-    color: none;
+    color: black;
 }
 
 a:hover {
@@ -69,6 +70,15 @@ h2 {
 .icons {
     display: flex;
     margin-top: 21px;
+    height: 50px;
+    width: 50px;
+}
+
+.linkBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+    padding-right: 8%;
     height: 50px;
     width: 50px;
 }
