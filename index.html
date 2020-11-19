@@ -3,59 +3,71 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
   <title>Portfolio</title>
-  <link rel="stylesheet" href="<link rel=" stylesheet " href="
-    https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css " integrity="
-    sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z " crossorigin=" anonymous ">
-    <link rel=" stylesheet " href=" main.css ">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
   <!--Header Section-->
-  <div class=" headerWrapper ">
+  <section class=" headerWrapper ">
     <!--Navbar-->
-    <nav class=" navBar " >
-      <ul>
-        <li><a href=" #anchorAbout ">About</a></li>
-        <li><a href=" #anchorSkills ">Skills</a></li>
-        <li><a href=" #anchorProjects ">Projects</a></li>
-        <li><a href=" #anchorLinks ">Links</a></li>
-        <!--<li><a href=" #anchorContact ">Contact</a></li>-->
-      </ul>
-    </nav>
-    <div class=" headerPic ">
-      <!--picture of duck in pond-->
-    </div>
-  </div>
+      <div class="row">
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark h-5 pt-4 text-light">
+              <ul>
+                <li><a href="#anchorAbout">About</a></li>
+                <li><a href="#anchorSkills">Skills</a></li>
+                <li><a href="#anchorProjects">Projects</a></li>
+                <li><a href="#anchorLinks">Links</a></li>
+                <li><a href="#anchorContact">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="image">
+              <img src="./assets/Sitting Duck.jpg" class="img-fluid">
+              <p class="psst">Psst.. I took this photo of that magnificent duck.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
   <!--About Section-->
-  <div class=" aboutWrapper" id="anchorAbout">
-  <div class="aboutTextBox ">
-    <h1>Jonathan Carey</h1>
-    <p>I am a multimedia professional with 3 years experience and a Junior Developer. My focus is facilitating the
-      growth of clients' businesses via multimedia production and design. </p>
-  </div>
-  </div>
+  <section class=" aboutWrapper" id="anchorAbout">
+    <div class="aboutTextBox ">
+      <h1>Lord Jonathan Carey</h1>
+      <p>Yep, I really am a Lord. But I'm also a software developer with a background in film! After siezing an opportunity at Eleven Fifty Academy, I have learned programming through a series of industry driven projects like making text based games, created applications for database management and creating our own APIs! In my spare time when I'm not feeling compelled to better myself by learning Unity, I have been known to enjoy tennis, video games, Lord of the Rings Lore and photography.</p>
+      <a href=""><p>Resume Download!</p></a>
+    </div>
+  </section>
   <hr>
   <!--Tech Skills Section-->
-  <div class="techSkillsWrapper " id="anchorSkills ">
+  <section class="techSkillsWrapper" id="anchorSkills">
     <h2>Tech Skills</h2>
-    <div class="iconBox ">
+    <div class="iconBox">
       <img src="https://www.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png " alt=" " class="icons ">
       <h3>HTML5</h3>
-    </div>
-    <div class="iconBox ">
-      <img src="https://www.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png " alt=" " class="icons ">
-      <h3>CSS</h3>
-    </div>
-    <div class="iconBox ">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png "
-        alt=" " class="icons ">
-      <h3>C#</h3>
-    </div>
-  </div>
+      </d>
+      <div class="iconBox">
+        <img src="https://www.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png " alt=" " class="icons ">
+        <h3>CSS</h3>
+      </div>
+      <div class="iconBox ">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png "
+          alt=" " class="icons ">
+        <h3>C#</h3>
+      </div>
+  </section>
   <hr>
   <!--Portfolio Gallery Grid-->
-  <div class="projectsWrapper " id="anchorProjects ">
+  <section class="projectsWrapper " id="anchorProjects">
     <h2>Projects</h2>
     <div id="myBtnContainer ">
       <button class="btn active " onclick="filterSelection( 'all') "> Show all</button>
@@ -99,8 +111,8 @@
         <div class="content ">
           <a href="https://github.com/JonathanCarey13/GoldBadgeChallenges "><img src="./assets/CSharp.JPG "
               alt="project5 " style="width:100% "></a>
-          <h4>3 Challenges</h4>
-          <p>3 Examples of differenct menu types.</p>
+          <h4>Menu Applications</h4>
+          <p>Examples of three different menu applications.</p>
         </div>
       </div>
       <div class="column cSharp">
@@ -112,10 +124,26 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <hr>
+  <!--Contact Section-->
+  <section class="contactWrapper">
+    <div class="contactBox " id="anchorContact">
+      <form action="https://formspree.io/f/mnqozwaw" method="POST">
+        <label for="fname ">First Name</label>
+        <input type="text " id="fname " name="firstname " placeholder="Your first name.. ">
+        <label for="lname ">Last Name</label>
+        <input type="text " id="lname " name="lastname " placeholder="Your last name.. ">
+        <label for=" ">Email</label>
+        <input type="text " id="email " name="email " placeholder="Your email... ">
+        <label for="subject ">Subject</label>
+        <textarea id="subject " name="subject " placeholder="Write something.. "></textarea>
+        <button type="submit " value="Submit " class="submitButton ">
+          <p>Submit</p>
+    </div>
+  </section>
   <!--Social Media Accounts-->
-  <div class="linksWrapper " id="anchorLinks ">
+  <section class="linksWrapper " id="anchorLinks">
     <div class="linkBox ">
       <img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png " alt=" " class="linkIcon ">
       <a href="https://github.com/JonathanCarey13 ">
@@ -143,35 +171,23 @@
         <h3>Repl</h3>
       </a>
     </div>
-  </div>
-  <!--Contact Section-->
-  <div class="contactWrapper ">
-    <div class="contactBox " id="anchorContact ">
-      <form action=" "></form>
-      <label for="fname ">First Name</label>
-      <input type="text " id="fname " name="firstname " placeholder="Your first name.. ">
-      <label for="lname ">Last Name</label>
-      <input type="text " id="lname " name="lastname " placeholder="Your last name.. ">
-      <label for=" ">Email</label>
-      <input type="text " id="email " name="email " placeholder="Your email... ">
-      <label for="subject ">Subject</label>
-      <textarea id="subject " name="subject " placeholder="Write something.. "></textarea>
-      <button type="submit " value="Submit " class="submitButton ">
-        <p>Submit</p>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6 mt-2">
+          <p>Lord Jonathan Carey, &copy; MMXX</p>
+        </div>
+        <div class="col-2"></div>
+      </div>
     </div>
-  </div>
+  </footer>
 
   <!--Script Section-->
   <!--Bootstrap Script-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous ">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous ">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
 
   <!--Filtering Script Section-->
   <script>
@@ -207,7 +223,6 @@
       element.className = arr1.join(" ");
     }
 
-
     // Add active class to the current button (highlight it)
     var btnContainer = document.getElementById("myBtnContainer");
     var btns = btnContainer.getElementsByClassName("btn");
@@ -220,6 +235,6 @@
     }
   </script>
 
-  </body>
+</body>
 
 </html>
