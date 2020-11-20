@@ -42,28 +42,41 @@
   <section class=" aboutWrapper" id="anchorAbout">
     <div class="aboutTextBox ">
       <h1>Lord Jonathan Carey</h1>
-      <p>Yep, I really am a Lord. But I'm also a software developer with a background in film! After siezing an opportunity at Eleven Fifty Academy, I have learned programming through a series of industry driven projects like making text based games, created applications for database management and creating our own APIs! In my spare time when I'm not feeling compelled to better myself by learning Unity, I have been known to enjoy tennis, video games, Lord of the Rings Lore and photography.</p>
-      <a href=""><p>Resume Download!</p></a>
+      <p>Yep, I really am a Lord. But I'm also a software developer with a background in film! After seizing an opportunity at Eleven Fifty Academy, I have learned programming through a series of industry driven projects like making text based games, created applications for database management and creating our own APIs! In my spare time when I'm not feeling compelled to better myself by learning Unity, I have been known to enjoy tennis, video games, Lord of the Rings Lore and photography.</p>
+      <a href="https://github.com/JonathanCarey13/Portfolio/raw/master/Jonathan%20Carey%20SD%20Resume.pdf" download><p>Resume Download</p></a>
     </div>
   </section>
   <hr>
   <!--Tech Skills Section-->
   <section class="techSkillsWrapper" id="anchorSkills">
-    <h2>Tech Skills</h2>
-    <div class="iconBox">
-      <img src="https://www.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png " alt=" " class="icons ">
-      <h3>HTML5</h3>
-      </d>
-      <div class="iconBox">
-        <img src="https://www.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png " alt=" " class="icons ">
-        <h3>CSS</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h2>Tech Skills</h2>
+        </div>
       </div>
-      <div class="iconBox ">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png "
-          alt=" " class="icons ">
-        <h3>C#</h3>
-      </div>
+      <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <div class="iconBox">
+            <img src="https://www.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png " alt=" " class="icons ">
+            <h3 id="h3">HTML5</h3>
+          </d>
+          <div class="iconBox">
+            <img src="https://www.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png " alt=" " class="icons ">
+            <h3 id="h3">CSS</h3>
+          </div>
+          <div class="iconBox ">
+            <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png "
+            alt=" " class="icons ">
+            <h3 id="h3">C#</h3>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        </div>
+    </div>
   </section>
   <hr>
   <!--Portfolio Gallery Grid-->
@@ -127,7 +140,40 @@
   </section>
   <hr>
   <!--Contact Section-->
-  <section class="contactWrapper">
+  <form action="https://formspree.io/f/mnqozwaw" method="POST">
+    <div id="anchorContact">
+      <div class="container">
+        <div class="row justify justify-content-center">
+          <div class="col-11 col-md-8 col-lg-6 col-xl-5">
+                <form class="">
+                  <div class="card bg-dark">
+                    <div class="row mt-0">
+                      <div class="col-md-12 ">
+                        <h4 class="">Contact Us</h4>
+                        <p>Use the form below to share your questions, ideas, comments and feedback</p>
+                      </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                      <div class="col-md-12 mb-0">
+                        <p class="mb-1">Email</p> <input id="e-mail" type="text" placeholder="Enter your email" name="email" class="form-control input-box rm-border">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-12 mb-2">
+                        <p class="mb-1">Message</p> <textarea id="message" type="text" placeholder="Enter your message" name="message" class="form-control input-box rm-border"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row justify-content-center mb-0">
+                      <div class="col-md-12 px-3"> <input type="submit" value="Submit" class="btn btn-block btn-purple rm-border"> </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+        <!-- <section class="contactWrapper">
     <div class="contactBox " id="anchorContact">
       <form action="https://formspree.io/f/mnqozwaw" method="POST">
         <label for="fname ">First Name</label>
@@ -141,7 +187,7 @@
         <button type="submit " value="Submit " class="submitButton ">
           <p>Submit</p>
     </div>
-  </section>
+  </section> -->
   <!--Social Media Accounts-->
   <section class="linksWrapper " id="anchorLinks">
     <div class="linkBox ">
